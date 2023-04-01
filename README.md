@@ -1,4 +1,4 @@
-# web-app-template
+# node-cli-template
 
 This is a template repository for a Node.js CLI application.
 
