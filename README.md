@@ -2,13 +2,18 @@
 
 This is a template repository for a Node.js CLI application.
 
-* Typescript, ESLint, esbuild.
+* Typescript
+* ESLint
+* esbuild
+* GoodFlow (for error handling) 
 
 ## Usage
 
 1. Click the "**Use Template**" button on Github to create your own repository from this template
 2. Locally clone your new remote Github repository
-5. Run `npm run hello "Joe Bloggs"` to run the example command
+3. From the root directory of your new local clone, run `node setup.js`, entering in some details.
+4. After it completes, you can remove `setup.js` and this section of the README.
+5. Run `npm run build-dev && npm run hello-dev "Joe Bloggs"` to build the CLI and run the `hello` example command.
 6. For information on how to develop on your new codebase, see [./contributing/development.md](./contributing/development.md)
 7. Have fun!
 
