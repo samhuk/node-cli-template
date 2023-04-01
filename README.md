@@ -52,6 +52,4 @@ See [./contributing/development.md](./contributing/development.md)
 
 > If desired, briefly mention any donation links here. Here's Buy Me a Coffee as an example:
 
-If you found this app delightful, feel free to buy me a coffee ✨
-
-<a href="https://www.buymeacoffee.com/{{buy-me-a-coffee-user-name}}" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+If you found this package delightful, feel free to [buy me a coffee](https://www.buymeacoffee.com/{{buy-me-a-coffee-user-name}}) ✨
