@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "hello command",
+      "type": "node",
+      "request": "launch",
+      "program": "build/cli/index.js",
+      "args": ["hello", "Joe Bloggs"],
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+    }
+  ]
+}

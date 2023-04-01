@@ -1,0 +1,38 @@
+{
+  "name": "{{npm-package-name}}",
+  "version": "1.0.0",
+  "description": "{{package-slogan}}",
+  "bin": {
+    "{{app-name}}": "./build/cli/index.js"
+  },
+  "scripts": {
+    "lint": "eslint -c .eslintrc.json ./src --ext .ts,.tsx",
+    "lint-errors-only": "eslint -c .eslintrc.json ./src --ext .ts,.tsx --quiet",
+
+    "build-dev": "env-cmd -e dev ts-node ./src/cli/build/bin/build.ts",
+    "hello-dev": "env-cmd -e dev node ./build/cli/index.js hello"
+  },
+  "keywords": [],
+  "author": {
+    "email": "{{license-email}}",
+    "name": "{{license-name}}"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^10.0.0",
+    "env-cmd": "^10.1.0",
+    "esbuild": "^0.17.14",
+    "esbuild-node-externals": "^1.7.0",
+    "good-flow": "^0.0.19",
+    "ts-node": "^10.9.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "eslint": "^8.37.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "@typescript-eslint/eslint-plugin": "^5.40.0",
+    "@typescript-eslint/parser": "^5.40.0"
+  }
+}
