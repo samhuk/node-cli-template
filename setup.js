@@ -40,8 +40,8 @@ const tryGetInput = (question, onComplete, validators, defaultIfEmpty) => {
   })
 }
 
-const getDashCasePackageName = () => new Promise((res, rej) => {
-  tryGetInput('package-name', res, [VALIDATORS.hasNoSpaces], 'node-cli-app')
+const getDashCaseAppName = () => new Promise((res, rej) => {
+  tryGetInput('app-name', res, [VALIDATORS.hasNoSpaces], 'node-cli-app')
 })
 
 const getNpmPackageName = () => new Promise((res, rej) => {
@@ -60,8 +60,8 @@ const getGithubUserName = () => new Promise((res, rej) => {
   tryGetInput('github-user-name', res, [VALIDATORS.hasNoSpaces], 'joebloggs')
 })
 
-const getPackageSlogan = () => new Promise((res, rej) => {
-  tryGetInput('package-slogan', res, [], 'Node.js CLI Application')
+const getAppSlogan = () => new Promise((res, rej) => {
+  tryGetInput('app-slogan', res, [], 'Node.js CLI Application')
 })
 
 const _replaceTokensInFiles = (filePaths, tokenMapEntries, i, onComplete) => {
@@ -101,20 +101,20 @@ const npmInstall = () => new Promise((res, rej) => {
 })
 
 const main = async () => {
-  const dashCasePackageName = await getDashCasePackageName()
+  const dashCaseAppName = await getDashCaseAppName()
   const npmPackageName = await getNpmPackageName()
   const licenseName = await getLicenseName()
   const licenseEmail = await getLicenseEmail()
   const githubUserName = await getGithubUserName()
-  const packageSlogan = await getPackageSlogan()
+  const appSlogan = await getAppSlogan()
 
   const tokenMap = {
-    '{{package-name}}': dashCasePackageName,
+    '{{app-name}}': dashCaseAppName,
     '{{npm-package-name}}': npmPackageName,
     '{{license-name}}': licenseName,
     '{{license-email}}': licenseEmail,
     '{{github-user-name}}': githubUserName,
-    '{{package-slogan}}': packageSlogan,
+    '{{app-slogan}}': appSlogan,
   }
 
   await replaceTokensInFiles(['./README.md', './package.json', './LICENSE', './src/common/name.ts'], tokenMap)
