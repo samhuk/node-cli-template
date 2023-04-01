@@ -121,7 +121,7 @@ const main = async () => {
 
   await npmInstall()
 
-  console.log('\nSetup complete! Run: npm run build-dev && npm run hello-dev')
+  console.log('\nSetup complete! Run: npm run build-dev && npm run hello-dev "Joe Bloggs"')
   r1.close()
 }
 
