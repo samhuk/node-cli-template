@@ -17,7 +17,7 @@ This is a template repository for a Node.js CLI application.
 6. For information on how to develop on your new codebase, see [./contributing/development.md](./contributing/development.md)
 7. Have fun!
 
-This template is approximately based off of the architecture of [samhuk.com](http://www.samhuk.com).
+This template is approximately based off of the architecture of [hey](https://github.com/samhuk/hey) and the CLI of [Exhibitor](https://github.com/samhuk/exhibitor).
 
 If you found this delightful, feel free to [sponsor me on GitHub](https://github.com/sponsors/samhuk) 💕 or [buy me a coffee](https://www.buymeacoffee.com/samhuk) ☕
 
