@@ -19,7 +19,7 @@ This is a template repository for a Node.js CLI application.
 
 This template is approximately based off of the architecture of [samhuk.com](http://www.samhuk.com).
 
-If you found this delightful, feel free to [buy me a coffee](https://www.buymeacoffee.com/samhuk) ✨
+If you found this delightful, feel free to [sponsor me on GitHub](https://github.com/sponsors/samhuk) 💕 or [buy me a coffee](https://www.buymeacoffee.com/samhuk) ☕
 
 ---
 
